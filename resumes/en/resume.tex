@@ -9,8 +9,8 @@
 %
 % This template follows best practices from README.md
 
-% Start of LaTeX document: defines document type and format
-% a4paper = A4 page size, 10pt = base font size
+% LaTeX document setup: defines document type and format
+% a4paper = A4 size, 10pt = base font size
 \documentclass[a4paper,10pt]{article}
 
 % --- PACKAGES ---
@@ -21,20 +21,18 @@
 \usepackage{parskip}
 \usepackage{hyperref}
 \usepackage{titlesec}
-% For better line breaks in long URLs (don't use \href{}, use \url{} for long URLs)
-% \usepackage{xurl}
 
-% --- DOCUMENT SETUP ---
-% Set page margins to maximize content space
-\geometry{top=1.0cm, bottom=1.0cm, left=1.0cm, right=1.0cm}
+% --- DOCUMENT CONFIGURATION ---
+% Sets page margins to maximize content space
+\geometry{top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm}
 
-% Remove page numbers and headers for clean resume look
+% Removes page numbers and headers for clean resume visual
 \pagestyle{empty}
 
-% PDF metadata - customize with your information
+% PDF metadata
 \hypersetup{
-    pdftitle={CV Your Name},
-    pdfauthor={Your Name},
+    pdftitle={CV Luis Eduardo Nunes},
+    pdfauthor={Luis Eduardo Galvão da Costa Nunes},
     colorlinks=true,
     linkcolor=black,
     urlcolor=black,
@@ -42,10 +40,10 @@
     bookmarksdepth=1 
 }
 
-% Disable section numbering for cleaner appearance
+% Disables section numbering
 \setcounter{secnumdepth}{0}
 
-% Format section headers with bold text and underline
+% Formats section headers with underline
 \titleformat{\section}
 {\Large\bfseries}
 {}
@@ -53,105 +51,92 @@
 {}
 [\titlerule\vspace{0.5ex}]
 
-% --- BEGIN DOCUMENT ---
+% --- DOCUMENT START ---
 \begin{document}
 
 % --- HEADER ---
-% Replace with your personal information
 \begin{center}
-    {\LARGE \textbf{Your Full Name}} 
+    {\LARGE \textbf{Luis Eduardo Galvão da Costa Nunes}} 
     \\ [0.1cm]
-    Your City, Your Country 
+    Natal, RN - Brazil
     {\textbullet}
-    Email: \href{mailto:your.email@example.com}{your.email@example.com} 
+    Email: \href{mailto:luisenunes2002@gmail.com}{luisenunes2002@gmail.com} 
     {\textbullet}
-    \href{https://www.linkedin.com/in/yourprofile}{linkedin.com/in/yourprofile} 
+    \href{https://www.linkedin.com/in/luisenunes}{linkedin.com/in/luisenunes} 
     {\textbullet}
-    \href{https://github.com/yourusername}{github.com/yourusername}
+    \href{https://github.com/LuisENunes}{github.com/LuisENunes}
 \end{center}
 
 % --- SECTIONS ---
 
-\section{Leadership Activities} 
-    % Include volunteer work, clubs, organizations, or leadership roles
+\section{Education}
     \subsection*{\texorpdfstring{
-            \textbf{Organization Name} \hfill Location (e.g. Remote or State, Country)
+            \textbf{Universidade Potiguar} \hfill Natal, RN - Brazil
         }{
-            Organization Name (Leadership) -- Location
+            Universidade Potiguar -- Natal, RN - Brazil
         }}
-    \textit{Your Role/Position \hfill Start Date - End Date (e.g. Jan 2024 - Present)}
-        \begin{itemize}
-            % Use action verbs from the README - quantify your impact when possible
-            \item Describe a significant leadership accomplishment with specific metrics.
-            \item Highlight how you managed teams, led initiatives, or drove results.
-            \item Show impact on the organization or community you served.
-        \end{itemize}
+    \textit{Bachelor's Degree in Computer Science \hfill Mar 2025 - 2029 (In Progress)}
 
 % ------
 
 \section{Experience}
-    % List work experience in reverse chronological order (most recent first)
     \subsection*{\texorpdfstring{
-            \textbf{Company/Organization Name} \hfill Location (e.g. Remote or State, Country)
+            \textbf{Self-Employed} \hfill Natal, RN - Brazil
         }{
-            Company Name -- Location
+            Self-Employed -- Natal, RN - Brazil
         }}
-    \textit{Job Title (e.g. Software Engineer, Data Analyst) \hfill Start Date - End Date}
-        \begin{itemize} 
-            % Focus on achievements, not just duties - use STAR method (Situation, Task, Action, Result)
-            \item Accomplished [specific result] by [action taken], leading to [quantified impact].
-            \item Developed/Built/Created [what you made] using [technologies/methods], resulting in [benefit].
-            \item Collaborated with [team size/type] to [achieve what], improving [metric] by [percentage/amount].
+    \textit{Computer Maintenance Technician \hfill Mar 2023 - Present}
+        \begin{itemize}
+            \item Assembled hundreds of complete desktops for clients, selecting components and ensuring hardware compatibility
+            \item Performed hundreds of OS installations and formatting (Windows 10/11), including disk partitioning and initial configuration
+            \item Diagnosed and resolved hundreds of hardware and software issues, reducing downtime for clients
+            \item Executed physical cleaning and malware removal on hundreds of machines, improving performance on slow computers
+            \item Provided direct technical support to clients, explaining procedures and offering usage guidance
+        \end{itemize}
+
+% ------
+
+\section{Certifications}
+
+    \subsection*{\texorpdfstring{
+            \textbf{Java Foundations} \hfill Oracle
+        }{
+            Java Foundations -- Oracle
+        }}
+        \begin{itemize}
+            \item Developed applications using Object-Oriented Programming (OOP) concepts, applying encapsulation, inheritance, and polymorphism to create modular and reusable code
+            \item Implemented exception handling and Collections manipulation to ensure robustness and efficiency in Java applications
+            \item Tech Stack: Java, OOP, Collections, Exception Handling, JVM, Software Development
         \end{itemize}
 
     \subsection*{\texorpdfstring{
-        	\textbf{Company/Organization Name} \hfill Location (e.g. Remote or State, Country)
+            \textbf{Algorithms and Programming Logic} \hfill Udemy
         }{
-            Another Company/Organization -- Location
+            Algorithms and Programming Logic -- Udemy
         }}
-    \textit{Job Title (e.g. Junior Developer, Research Assistant) \hfill Start Date -- End Date}
         \begin{itemize}
-            \item Use active verbs from the action verbs table in README.md
-            \item Quantify your achievements whenever possible (numbers, percentages, timeframes)
-            \item Show progression and increasing responsibility across roles
+            \item Completed over 50 hands-on programming logic exercises, implementing solutions in C, C++, Python, C\#, and Java
+            \item Applied data structures such as arrays and matrices, using debugging and desk testing to validate algorithms
+            \item Tech Stack: Algorithms, Data Structures, Python, C, C++, Problem Solving, Debugging
         \end{itemize}
-        
+
     \subsection*{\texorpdfstring{
-        	\textbf{University/Research Institution} \hfill Location (e.g. Remote or State, Country)
+            \textbf{Data Analysis} \hfill VivaE
         }{
-            University/Research Institution -- Location
+            Data Analysis -- VivaE
         }}
-    \textit{Research/Academic Position (e.g. Undergraduate Researcher, Teaching Assistant) \hfill Start Date - End Date}
         \begin{itemize}
-            \item Include research, academic work, or projects that demonstrate technical skills
-            \item Highlight any publications, presentations, or significant findings
+            \item Studied data collection, organization, and visualization techniques to support decision-making
+            \item Applied Business Intelligence fundamentals for metrics interpretation and insight generation
+            \item Tech Stack: Python, Pandas, NumPy, PowerBI, Data Analysis, Data Visualization, Business Intelligence, Analytics, SQL
         \end{itemize}
 
 % ------
 
 \section{Skills}
-    % Keep this section concise and relevant to your target jobs
     \begin{itemize}
-        \item \textbf{Technical:} List your programming languages, frameworks, tools, and methodologies
-        \item \textbf{Language:} Your Native Language (Native), Second Language (Proficiency Level), Third Language (Proficiency Level)
+        \item \textbf{Technical:} Java, Python, JavaScript, HTML, CSS, SQL (MySQL, PostgreSQL, SQL Server), Git, MVC, Hardware assembly and maintenance
+        \item \textbf{Languages:} Portuguese (Native), English (C1 - Fluent)
     \end{itemize}
-
-% ------
-
-% !!!!!!!!!!!!!!!!!!!!!!
-% Place this section directly below the header and above the 
-% Experience section if you’re applying for your first job 
-% or an internship; otherwise, leave it at the end of your 
-% resume.
-% !!!!!!!!!!!!!!!!!!!!!!
-
-\section{Education}
-    % Use this format for each degree - most recent first
-    \subsection*{\texorpdfstring{
-            \textbf{Your University Name} \hfill Location (e.g. Remote or State, Country)
-        }{
-            Your University Name (Education) -- Location
-        }}
-    \textit{Your Degree Title (e.g. B.Sc. Computer Science) \hfill Start Date - End Date (e.g. Jan 2024 - Dec 2024)}
 
 \end{document}
